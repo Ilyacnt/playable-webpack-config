@@ -7,6 +7,7 @@ module.exports = {
   mode: 'development',
   entry: ['./src/script.js', './src/style.css'],
   output: {
+    publicPath: '',
     assetModuleFilename: '[name][ext]',
     path: path.resolve(__dirname, 'dist'),
   },
@@ -32,6 +33,9 @@ module.exports = {
   ],
   devServer: {
     static: './dist',
+    hot: true,
+    liveReload: true,
+    watchFiles: ['src/**/*'],
   },
   watch: true,
 };
