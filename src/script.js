@@ -1,2 +1,3 @@
+module.hot.accept()
 
-console.log('Hello From js filS')
+console.log('Hello From JS File')
